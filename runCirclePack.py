@@ -6,17 +6,17 @@ from pythonInclude import writeInputFile, convertCSV2npzBatch, makeImageNPZBatch
 #=======================
 # input parameters
 #=======================
-phi         = 0.830                     #phi
-N           = 20                      #
-phii        = 0.8
-seed        = 0
-Nseeds      = 2
-dirS        = "./data/"                 #save directory
+N           = 100                       # number of particles
+phi         = 0.84                      # packing fraction
+seed        = 0                         # intial seed
+Nseeds      = 2                         # #seeds to generate
+dirS        = "./data/"                 # save directory
+#=======================
 fireP       = fireParameters()          # see pythonInclude for full details
 simP        = simParameters()           #
 simP.N      = N                         # number of particles
 simP.phi0   = 0.85                      # initial packing, phi0>phi;  if this is too small, packing can have gaps
-simP.phi    = phii      #phiArray[i]                    # packing fraction for simulation
+simP.phi    = phi                       # packing fraction for simulation
 simP.seed   = seed
 simP.Nseeds = Nseeds
 #=======================
