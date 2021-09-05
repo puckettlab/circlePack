@@ -19,8 +19,11 @@ Python Packages:
 # Using the code
 
 > git clone https://github.com/puckettlab/circlePack.git
+
 > cd circlePack
+
 > cmake CMakeLists.txt
+
 > make
 
 Edit runCirclePack.py to your desired parameters. Run with:
