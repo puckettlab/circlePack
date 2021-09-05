@@ -18,6 +18,18 @@ Python Packages:
 
 # Using the code
 
+- git clone https://github.com/puckettlab/circlePack.git
+- cd circlePack
+- cmake CMakeLists.txt
+- make
+- python runCirclePack.py
+
+# Editing parameters in runCirclePack.py
+-
+
+
+# Note on Parameters
+
 Python is used to generate input file and run the c++ code.  Numerous parameters can be set including:
 - simParameters : simulation Parameters. These setting control features of the packing.  See below for more details.
 - fireParameters : fire Parameters.  These set how the c++ code simulation will run to generate the circle packing. These do not in general need to be altered.
