@@ -6,9 +6,7 @@
 
 circlePack generates 2D packing of bidisperse granular material at given packing fraction.  The user can set numerous parameters (number of particles, packing fraction, bidisperse particle ratio)
 
-Requirements
-
-# Software
+# Software Requirements
 
 Everything was coded in c++ and Python 3.  The following packages are needed only to convert output from c++ code csv files into npz files and generate images of the packing.
 
@@ -29,8 +27,6 @@ Python Packages:
 Edit runCirclePack.py to your desired parameters. Run with:
 > python runCirclePack.py
 
-# Editing parameters in runCirclePack.py
-- a
 
 
 # Note on Parameters
