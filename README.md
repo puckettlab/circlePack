@@ -10,7 +10,7 @@ Requirements
 
 # Software
 
-Everything was coded in c++ and Python 3.
+Everything was coded in c++ and Python 3.  The following packages are needed only to convert output from c++ code csv files into npz files and generate images of the packing.
 
 Python Packages:
 - numpy
@@ -19,12 +19,15 @@ Python Packages:
 # Using the code
 
 Python is used to generate input file and run the c++ code.  Numerous parameters can be set including:
-- simParameters : simulation Parameters.
-- fireParameters : fire Parameters.  These set how the c++ code simulation will run to generate the circle packing.
+- simParameters : simulation Parameters. These setting control features of the packing.  See below for more details.
+- fireParameters : fire Parameters.  These set how the c++ code simulation will run to generate the circle packing. These do not in general need to be altered.
 
 # Parameters - simParameters
 
-
-- phi         = 0.830  
-- N           = 20    
-- phii        = 0.8
+- N   : number of particles in simulation   
+- phi : packing fraction
+- phi0: when generating a configuraiton, it may be desirable to require the configuration is initially unjammed.  Set phi0>phi for an initially unjammed pack.  
+- rratio: bidispersity ratio (rL/rS)
+- kN  : particle stiffness
+- seed : seed for generating the packing
+- Nseeds: if Nseeds>1, the code will start with 'seed' and iterate through 'Nseeds' configurations
